@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>SELECT  top (100)      Production.Product.Name, Production.Product.ProductNumber, Production.Product.Color, Production.Product.ListPrice, Production.Product.Size, Production.Product.DaysToManufacture, Production.Product.Class, 
+                         Production.Product.Style, Production.Product.SellStartDate, Production.Product.SellEndDate, Production.ProductSubcategory.Name AS ProductSubcategoryName, Production.ProductCategory.ProductCategoryID, 
+                         Production.ProductCategory.Name AS ProductCategoryName, Production.ProductSubcategory.ProductSubcategoryID
+FROM            Production.ProductCategory INNER JOIN
+                         Production.Product INNER JOIN
+                         Production.ProductSubcategory ON Production.Product.ProductSubcategoryID = Production.ProductSubcategory.ProductSubcategoryID ON 
+                         Production.ProductCategory.ProductCategoryID = Production.ProductSubcategory.ProductCategoryID</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Name">
+        <DataField>Name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ProductNumber">
+        <DataField>ProductNumber</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Color">
+        <DataField>Color</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ListPrice">
+        <DataField>ListPrice</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Size">
+        <DataField>Size</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DaysToManufacture">
+        <DataField>DaysToManufacture</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Class">
+        <DataField>Class</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Style">
+        <DataField>Style</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SellStartDate">
+        <DataField>SellStartDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="SellEndDate">
+        <DataField>SellEndDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="ProductSubcategoryName">
+        <DataField>ProductSubcategoryName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ProductCategoryID">
+        <DataField>ProductCategoryID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ProductCategoryName">
+        <DataField>ProductCategoryName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ProductSubcategoryID">
+        <DataField>ProductSubcategoryID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
