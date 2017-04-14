@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="25"
-  DTS:VersionGUID="{8467BA86-1DEE-49BD-AD97-E4CE56206A9A}">
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{0837E27A-00FA-42FB-889C-25C692BF269E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3674,14 +3674,14 @@
               startId="Package\Populate Dimensions\Multicast 1.Outputs[Multicast Output 3]" />
             <path
               refId="Package\Populate Dimensions.Paths[Multicast Output 41]"
-              endId="Package\Populate Dimensions\Store Items.Inputs[OLE DB Destination Input]"
-              name="Multicast Output 4"
-              startId="Package\Populate Dimensions\Multicast 1.Outputs[Multicast Output 4]" />
-            <path
-              refId="Package\Populate Dimensions.Paths[Multicast Output 4]"
               endId="Package\Populate Dimensions\Aggregate by ItemId.Inputs[Aggregate Input 1]"
               name="Multicast Output 4"
               startId="Package\Populate Dimensions\Multicast.Outputs[Multicast Output 4]" />
+            <path
+              refId="Package\Populate Dimensions.Paths[Multicast Output 4]"
+              endId="Package\Populate Dimensions\Store Items.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 4"
+              startId="Package\Populate Dimensions\Multicast 1.Outputs[Multicast Output 4]" />
             <path
               refId="Package\Populate Dimensions.Paths[Sort Output]"
               endId="Package\Populate Dimensions\Multicast 1.Inputs[Multicast Input 1]"
@@ -5803,7 +5803,7 @@ where [refTable].[ItemName] = ?</property>
         <NodeLayout
           Size="141,42"
           Id="Package\Disable index"
-          TopLeft="110,164" />
+          TopLeft="117,121" />
         <NodeLayout
           Size="139,42"
           Id="Package\Enable index"
@@ -5862,18 +5862,30 @@ where [refTable].[ItemName] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="251,184">
+          TopLeft="258,142">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="101,0"
+              EndConnector="94,41"
               Start="0,0"
-              End="93.5,0">
+              End="86.5,41">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="93.5,0" />
+                    End="43,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="43,0"
+                    Point2="47,0"
+                    Point3="47,4" />
+                  <mssgle:LineSegment
+                    End="47,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="47,37"
+                    Point2="47,41"
+                    Point3="51,41" />
+                  <mssgle:LineSegment
+                    End="86.5,41" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6342,7 +6354,7 @@ where [refTable].[ItemName] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate Dimensions.Paths[Multicast Output 41]"
+          Id="Package\Populate Dimensions.Paths[Multicast Output 4]"
           TopLeft="384.5,659.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6376,7 +6388,7 @@ where [refTable].[ItemName] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate Dimensions.Paths[Multicast Output 4]"
+          Id="Package\Populate Dimensions.Paths[Multicast Output 41]"
           TopLeft="372.666666666667,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
