@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="26"
-  DTS:VersionGUID="{0837E27A-00FA-42FB-889C-25C692BF269E}">
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{E7C1E3CC-C1FF-4EEF-9F06-AA276F75D985}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -5923,6 +5923,13 @@ where [refTable].[ItemName] = ?</property>
           Size="238,152"
           Id="c0b733ac-63d7-4414-9957-5bb37508d37c"
           TopLeft="826,144" />
+        <AnnotationLayout
+          Text="This was committed first in master branch"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="250,60"
+          Id="45ef5c09-cc89-4acb-9f51-3023c4e29302"
+          TopLeft="146,309" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
