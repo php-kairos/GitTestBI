@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{E7C1E3CC-C1FF-4EEF-9F06-AA276F75D985}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{14E881E0-B342-44E1-B7BD-1DB4B65C610B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3674,14 +3674,14 @@
               startId="Package\Populate Dimensions\Multicast 1.Outputs[Multicast Output 3]" />
             <path
               refId="Package\Populate Dimensions.Paths[Multicast Output 41]"
-              endId="Package\Populate Dimensions\Aggregate by ItemId.Inputs[Aggregate Input 1]"
-              name="Multicast Output 4"
-              startId="Package\Populate Dimensions\Multicast.Outputs[Multicast Output 4]" />
-            <path
-              refId="Package\Populate Dimensions.Paths[Multicast Output 4]"
               endId="Package\Populate Dimensions\Store Items.Inputs[OLE DB Destination Input]"
               name="Multicast Output 4"
               startId="Package\Populate Dimensions\Multicast 1.Outputs[Multicast Output 4]" />
+            <path
+              refId="Package\Populate Dimensions.Paths[Multicast Output 4]"
+              endId="Package\Populate Dimensions\Aggregate by ItemId.Inputs[Aggregate Input 1]"
+              name="Multicast Output 4"
+              startId="Package\Populate Dimensions\Multicast.Outputs[Multicast Output 4]" />
             <path
               refId="Package\Populate Dimensions.Paths[Sort Output]"
               endId="Package\Populate Dimensions\Multicast 1.Inputs[Multicast Input 1]"
@@ -5927,9 +5927,16 @@ where [refTable].[ItemName] = ?</property>
           Text="This was committed first in master branch"
           ParentId="Package"
           FontInfo="{assembly:Null}"
-          Size="250,60"
+          Size="250,40"
           Id="45ef5c09-cc89-4acb-9f51-3023c4e29302"
           TopLeft="146,309" />
+        <AnnotationLayout
+          Text="This comment added in master later"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="220,60"
+          Id="67b49283-1a54-4cb0-b513-867d9752be64"
+          TopLeft="200,443" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -6361,7 +6368,7 @@ where [refTable].[ItemName] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate Dimensions.Paths[Multicast Output 4]"
+          Id="Package\Populate Dimensions.Paths[Multicast Output 41]"
           TopLeft="384.5,659.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6395,7 +6402,7 @@ where [refTable].[ItemName] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate Dimensions.Paths[Multicast Output 41]"
+          Id="Package\Populate Dimensions.Paths[Multicast Output 4]"
           TopLeft="372.666666666667,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
