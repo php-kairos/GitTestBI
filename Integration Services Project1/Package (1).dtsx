@@ -3674,14 +3674,14 @@
               startId="Package\Populate Dimensions\Multicast 1.Outputs[Multicast Output 3]" />
             <path
               refId="Package\Populate Dimensions.Paths[Multicast Output 41]"
-              endId="Package\Populate Dimensions\Aggregate by ItemId.Inputs[Aggregate Input 1]"
-              name="Multicast Output 4"
-              startId="Package\Populate Dimensions\Multicast.Outputs[Multicast Output 4]" />
-            <path
-              refId="Package\Populate Dimensions.Paths[Multicast Output 4]"
               endId="Package\Populate Dimensions\Store Items.Inputs[OLE DB Destination Input]"
               name="Multicast Output 4"
               startId="Package\Populate Dimensions\Multicast 1.Outputs[Multicast Output 4]" />
+            <path
+              refId="Package\Populate Dimensions.Paths[Multicast Output 4]"
+              endId="Package\Populate Dimensions\Aggregate by ItemId.Inputs[Aggregate Input 1]"
+              name="Multicast Output 4"
+              startId="Package\Populate Dimensions\Multicast.Outputs[Multicast Output 4]" />
             <path
               refId="Package\Populate Dimensions.Paths[Sort Output]"
               endId="Package\Populate Dimensions\Multicast 1.Inputs[Multicast Input 1]"
@@ -5927,7 +5927,7 @@ where [refTable].[ItemName] = ?</property>
           Text="This was committed first in master branch"
           ParentId="Package"
           FontInfo="{assembly:Null}"
-          Size="250,60"
+          Size="250,40"
           Id="45ef5c09-cc89-4acb-9f51-3023c4e29302"
           TopLeft="146,309" />
         <AnnotationLayout
@@ -6368,7 +6368,7 @@ where [refTable].[ItemName] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate Dimensions.Paths[Multicast Output 4]"
+          Id="Package\Populate Dimensions.Paths[Multicast Output 41]"
           TopLeft="384.5,659.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6402,7 +6402,7 @@ where [refTable].[ItemName] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate Dimensions.Paths[Multicast Output 41]"
+          Id="Package\Populate Dimensions.Paths[Multicast Output 4]"
           TopLeft="372.666666666667,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
