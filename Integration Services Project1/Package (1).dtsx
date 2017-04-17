@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{E7C1E3CC-C1FF-4EEF-9F06-AA276F75D985}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{2E580909-527D-4BE0-AC28-7754E32C9FEF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -5930,6 +5930,13 @@ where [refTable].[ItemName] = ?</property>
           Size="250,60"
           Id="45ef5c09-cc89-4acb-9f51-3023c4e29302"
           TopLeft="146,309" />
+        <AnnotationLayout
+          Text="Comment added in Master 2"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="181,60"
+          Id="5f1c35f2-c3a0-4166-9c4b-8de285425e6c"
+          TopLeft="331,443" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
