@@ -12,7 +12,7 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:VersionBuild="29"
-  DTS:VersionGUID="{14E881E0-B342-44E1-B7BD-1DB4B65C610B}">
+  DTS:VersionGUID="{2E580909-527D-4BE0-AC28-7754E32C9FEF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -5931,7 +5931,7 @@ where [refTable].[ItemName] = ?</property>
           Id="45ef5c09-cc89-4acb-9f51-3023c4e29302"
           TopLeft="146,309" />
         <AnnotationLayout
-          Text="This comment added in master later"
+          Text="This comment added in master later - issue fixed"
           ParentId="Package"
           FontInfo="{assembly:Null}"
           Size="220,60"
